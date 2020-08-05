@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>weeklyreport1.0</display-name>
+  <welcome-file-list>
+  	<welcome-file>register.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+	<servlet>
+	<servlet-name>Verification</servlet-name>
+	<servlet-class>cn.weeklyreport.servlet.Verification</servlet-class>
+	</servlet>
+<servlet-mapping>
+	<servlet-name>Verification</servlet-name>
+	<url-pattern>/Verification</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Update</servlet-name>
+	<servlet-class>cn.weeklyreport.servlet.Update</servlet-class>
+	</servlet>
+<servlet-mapping>
+	<servlet-name>Update</servlet-name>
+	<url-pattern>/Update</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Informationchose</servlet-name>
+	<servlet-class>cn.weeklyreport.servlet.Informationchose</servlet-class>
+	</servlet>
+<servlet-mapping>
+	<servlet-name>Informationchose</servlet-name>
+	<url-pattern>/Informationchose</url-pattern>
+</servlet-mapping>
+
+</web-app>
